@@ -5,15 +5,17 @@
 * { 
     font-family: Yu Gothic;
     color: white;
+    --dark-mode-bg: rgb(56, 56, 56);
+    --dark-mode-txt: white;
+    --light-mode-bg: white;
+    --light-mode-txt: black;
 }
 
 body {
-    /*height: 100%;
-    width: 100%;*/
-    background-color: gray;
+    background-color: var(--dark-mode-bg);
 }
 
-a {
+a, button {
     cursor: pointer;
 }
 
@@ -23,12 +25,17 @@ p, h1, h2, h3, h4 {
 
 /* NAME & JOB TITLE SECTION*/
 .name-title {
-    /*height: 50px;*/
-    background-color: gray;
+    /*display: flex;*/
+    background-color: var(--dark-mode-bg);
     position: sticky;
     top: 0px;
     padding: 35px 0 70px 5%;
-    z-index: 1; 
+    z-index: 1;
+}
+
+.name-title .mode-switch {
+    border-bottom: 1px solid rgb(58, 58, 58);
+    align-content: right;
 }
 
 .name-title h1 {
@@ -82,10 +89,12 @@ p, h1, h2, h3, h4 {
 
 /*NAVIGATION CONTENT*/
 /*.screen-border {
+    width: calc(100vw - 300px);
+    height: calc(100vh - 300px);
     position: fixed;
-    margin-top: 10px;
     left: 3%;
     bottom: 3%;
+    /*margin-top: 10px;
     width: 70%;
     height: 65vh;
     border: 2px solid red;
