@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+* { 
+    box-sizing:border-box;
+    font-family: Yu Gothic;
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+a {
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4 {
+    cursor: default;
+}
+
+/* NAME & JOB TITLE SECTION*/
+.name-title {
+    margin-top: 2em;
+    padding: 0 3%;
+}
+
+.name-title h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 10vh; /*~100px;*/
+    Margin: 0;
+}
+
+.name-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vh; /*~50px;*/
+    font-weight: lighter;
+    Margin: 0;
+}
+
+/* MAIN SECTION*/
+.section-main {
+    /*width: 98%;
+    height: 95%;*/
+    background-color: rgba(255, 166, 0, 0.452);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.section-main .home {
+    flex-basis: 800px;
+    flex-grow: 1;
+    margin: 10% 10% 0 5%;
+}
+
+/* NAVIGATION SECTION*/
+.section-main .nav {
+    padding: 0 5%;
+    flex-basis: 800px;
+    flex-shrink: 1;
+    align-self: flex-end;
+}
+
+.section-main .nav ul {
+    text-align: right;
+    list-style-position: inside;
+}
+
+.section-main .nav ul li {
+    float: top;
+}
+
+.section-main .nav a {
+    font-family: 'Heebo', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    line-height: 70px;
+    letter-spacing: 7px;
+    padding: .2em;
+}
+
+.section-main .nav a:hover {
+    background-color: rgba(39, 39, 39, 0.548);
+    transition: all ease-in-out 300ms;
+}
+
+/*NAVIGATION CONTENT*/
+.section-main .home p {
+    font-size: 19px;
+}
