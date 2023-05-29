@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+* { 
+    font-family: Yu Gothic;
+    color: white;
+}
+
+body {
+    /*height: 100%;
+    width: 100%;*/
+    background-color: gray;
+}
+
+a {
+    cursor: pointer;
+}
+
+p, h1, h2, h3, h4 {
+    cursor: default;
+}
+
+/* NAME & JOB TITLE SECTION*/
+.name-title {
+    /*height: 50px;*/
+    background-color: gray;
+    position: sticky;
+    top: 0px;
+    padding: 35px 0 70px 5%;
+    z-index: 1; 
+}
+
+.name-title h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 10vh; /*~100px;*/
+    Margin: 0;
+}
+
+.name-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vh; /*~50px;*/
+    font-weight: lighter;
+    Margin: 0;
+}
+
+/* MAIN SECTION*/
+.section-main .home {
+    margin: 10% 10% 0 5%;
+}
+
+/* NAVIGATION SECTION*/
+.section-main .nav {
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    padding: 0 5%;
+}
+
+.section-main .nav ul {
+    text-align: right;
+    list-style-position: inside;
+}
+
+.section-main .nav ul li {
+    float: top;
+}
+
+.section-main .nav a {
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vh; /*40px;*/
+    text-decoration: none;
+    line-height: 8vh;/*70px;*/
+    letter-spacing: 7px;
+    padding: 1vh; /*.2em;*/
+}
+
+.section-main .nav a:hover {
+    background-color: rgba(39, 39, 39, 0.548);
+    transition: all ease-in-out 300ms;
+}
+
+/*NAVIGATION CONTENT*/
+/*.screen-border {
+    position: fixed;
+    margin-top: 10px;
+    left: 3%;
+    bottom: 3%;
+    width: 70%;
+    height: 65vh;
+    border: 2px solid red;
+}*/
+
+.section-main .home {
+    width: 50%;
+    z-index: 0;
+}
+
+.section-main .home p {
+    font-size: 19px;
+}
