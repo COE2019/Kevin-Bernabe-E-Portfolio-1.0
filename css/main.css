@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+* { 
+    font-family: Yu Gothic;
+    color: white;
+    --dark-mode-bg: rgb(56, 56, 56);
+    --dark-mode-txt: white;
+    --dark-mode-hov: rgba(128, 128, 128, 0.548);
+    --light-mode-bg: white;
+    --light-mode-txt: black;
+    --light-mode-hov: rgba(128, 128, 128, 0.548);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--dark-mode-bg);
+}
+
+a, 
+button {
+    cursor: pointer;
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+li {
+    cursor: default;
+}
+
+/* NAME & JOB TITLE SECTION*/
+.name-title {
+    /*display: flex;*/
+    background-color: var(--dark-mode-bg);
+    position: sticky;
+    top: 0px;
+    padding: 35px 0 70px 5%;
+    z-index: 1;
+}
+
+.name-title .mode-switch {
+    border-bottom: 1px solid var(--dark-mode-bg);
+    align-content: right;
+}
+
+.name-title h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 10vh; /*~100px;*/
+    text-decoration: underline rgb(204, 86, 174);
+    text-decoration-thickness: 0.6vh;
+    /*border-bottom: 1px solid white;
+    width: fit-content;*/
+    Margin: 0;
+}
+
+.name-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5vh; /*~50px;*/
+    font-weight: lighter;
+    Margin: 0;
+}
+
+/* MAIN SECTION*/
+.section-main .home {
+    margin: 10% 10% 0 5%;
+}
+
+.current-page {
+    color:rgb(197, 86, 169);
+    font-weight: bolder;
+}
+
+/* NAVIGATION SECTION*/
+.section-main .nav {
+    position: fixed;
+    bottom: 10%;
+    right: 20px;
+    padding: 0 5%;
+}
+
+.section-main .nav ul {
+    text-align: right;
+    list-style-position: inside;
+    padding-right: 7px;
+    border-right: 2px solid rgb(163, 76, 141);
+}
+
+.section-main .nav ul li {
+    float: top;
+}
+
+.section-main .nav a {
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vh; /*40px;*/
+    text-decoration: none;
+    line-height: 8vh;/*70px;*/
+    letter-spacing: 7px;
+    padding: 1vh; /*.2em;*/
+}
+
+.section-main .nav a:hover {
+    font-size: 5vh;
+    background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
+    transition: all ease-in-out 200ms;
+}
+
+/*NAVIGATION CONTENT*/
+/*.screen-border {
+    width: calc(100vw - 300px);
+    height: calc(100vh - 300px);
+    position: fixed;
+    left: 3%;
+    bottom: 3%;
+    /*margin-top: 10px;
+    width: 70%;
+    height: 65vh;
+    border: 2px solid red;
+}*/
+
+.section-main .home {
+    width: 50%;
+    z-index: 0;
+}
+
+.section-main .home p {
+    font-size: 19px;
+}
+

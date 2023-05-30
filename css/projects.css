@@ -1,0 +1,8 @@
+.nav .current-page  {
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vh; /*40px;*/
+    text-decoration: none;
+    line-height: 8vh;/*70px;*/
+    letter-spacing: 7px;
+    padding: 1vh; /*.2em;*/
+}
