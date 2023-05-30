@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../Images/arduino-logo.png) url(../Images/mit-ai-logo.png) url(../Images/blender-logo.png) url(../Images/yt-logo.png) url(../Images/ae-logo.png) url(../Images/audition-logo.png) url(../Images/wmm-logo.png);
+}
+
 .nav .current-page  {
     font-family: 'Heebo', sans-serif;
     font-size: 5vh; /*40px;*/
@@ -5,4 +15,270 @@
     line-height: 8vh;/*70px;*/
     letter-spacing: 7px;
     padding: 1vh; /*.2em;*/
+}
+
+/* PROJECTS SECTION */
+.info h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    padding-left: 10px;
+    border-left: 2px solid rgba(255, 255, 255, 0.39);
+    border-width: fit-content;
+}
+
+.info p {
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    width: 75%;
+}
+
+/* --------------------------------------------
+PROJECT 1 LOGO SECTION */
+.section-main .project-info {
+    display: flex;
+    width: 50%;
+    z-index: 0;
+}
+
+.arduino-logo {
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/arduino-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arduino-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.mit-logo {
+    margin-left: 0.3vw;
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/mit-ai-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mit-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.blender-logo {
+    margin-left: 0.3vw;
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/blender-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blender-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.arduino-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/arduino-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.mit-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/mit-ai-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.blender-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/blender-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+/* --------------------------------------------
+PROJECT 2 LOGO SECTION */
+.ae-logo {
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/ae-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ae-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.audition-logo {
+    margin-left: 0.3vw;
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/audition-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.audition-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.davinci-logo {
+    margin-left: 0.3vw;
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/davinci-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.davinci-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.yt-logo {
+    margin-left: 0.3vw;
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/yt-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.yt-dlsau-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.ae-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/ae-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.audition-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/audition-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.davinci-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/davinci-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.yt-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/yt-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+/* --------------------------------------------
+PROJECT 3 LOGO SECTION */
+.premiere-logo {
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/premiere-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.premiere-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.yt-red-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.premiere-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/premiere-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+/* --------------------------------------------
+PROJECT 4 LOGO SECTION */
+.wmm-logo {
+    width: 2vmax;
+    height: 2vmax;
+    background-image: url(../Images/wmm-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wmm-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.yt-fal-site {
+    display: block;
+    left: 2.5vmax; 
+    top: 2.5vmax;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+
+.wmm-logo:hover {
+    width: 2.5vmax;
+    height: 2.5vmax;
+    background-image: url(../Images/wmm-logo.png);
+    transition: all ease-in-out 200ms;
 }

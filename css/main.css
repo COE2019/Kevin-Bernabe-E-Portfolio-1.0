@@ -68,8 +68,14 @@ li {
 }
 
 /* MAIN SECTION*/
-.section-main .home {
+.section-main .info {
+    width: 50%;
     margin: 10% 10% 0 5%;
+    z-index: 0;
+}
+
+.section-main .info p {
+    font-size: 19px;
 }
 
 .current-page {
@@ -124,12 +130,5 @@ li {
     border: 2px solid red;
 }*/
 
-.section-main .home {
-    width: 50%;
-    z-index: 0;
-}
 
-.section-main .home p {
-    font-size: 19px;
-}
 
