@@ -4,6 +4,7 @@
 
 * { 
     font-family: Yu Gothic;
+    font-size: 62.5%;
     color: white;
     --dark-mode-bg: rgb(56, 56, 56);
     --dark-mode-txt: white;
@@ -37,7 +38,6 @@ li {
 
 /* NAME & JOB TITLE SECTION*/
 .name-title {
-    /*display: flex;*/
     background-color: var(--dark-mode-bg);
     position: sticky;
     top: 0px;
@@ -45,16 +45,16 @@ li {
     z-index: 1;
 }
 
-.name-title .mode-switch {
+/*.name-title .mode-switch {
     border-bottom: 1px solid var(--dark-mode-bg);
     align-content: right;
-}
+}*/
 
 .name-title h1 {
     font-family: 'Merriweather', serif;
-    font-size: 10vh; /*~100px;*/
+    font-size: 10rem; /*~100px;*/
     text-decoration: underline rgb(204, 86, 174);
-    text-decoration-thickness: 0.6vh;
+    text-decoration-thickness: 1.1rem;
     /*border-bottom: 1px solid white;
     width: fit-content;*/
     Margin: 0;
@@ -62,7 +62,7 @@ li {
 
 .name-title h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 5vh; /*~50px;*/
+    font-size: 5rem; /*~50px;*/
     font-weight: lighter;
     Margin: 0;
 }
@@ -75,15 +75,24 @@ li {
 }
 
 .section-main .info p {
-    font-size: 19px;
-}
-
-.current-page {
-    color:rgb(197, 86, 169);
-    font-weight: bolder;
+    font-size: 1.9rem;
 }
 
 /* NAVIGATION SECTION*/
+.nav .current-page {
+    font-family: 'Heebo', sans-serif;
+    font-size: 5.5rem; /*40px;*/
+    text-decoration: none;
+    line-height: 1.25;/*70px;*/
+    letter-spacing: 7px;
+    padding: 0.5rem; /*.2em;*/
+    padding-left: 8rem;
+    margin: 0.5rem 0;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
+    color:white;
+}
+
 .section-main .nav {
     position: fixed;
     bottom: 10%;
@@ -91,7 +100,7 @@ li {
     padding: 0 5%;
 }
 
-.section-main .nav ul {
+.section-main .nav ul  {
     text-align: right;
     list-style-position: inside;
     padding-right: 7px;
@@ -104,15 +113,16 @@ li {
 
 .section-main .nav a {
     font-family: 'Heebo', sans-serif;
-    font-size: 4vh; /*40px;*/
+    font-size: 4rem; /*40px;*/
     text-decoration: none;
-    line-height: 8vh;/*70px;*/
-    letter-spacing: 7px;
-    padding: 1vh; /*.2em;*/
+    line-height: 8rem;/*70px;*/
+    letter-spacing: 0.7rem;
+    padding: 1rem; /*.2em;*/
+    font-weight: bolder;
 }
 
-.section-main .nav a:hover {
-    font-size: 5vh;
+.nav a:hover {
+    font-size: 4.5rem;
     background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
     transition: all ease-in-out 200ms;
 }
@@ -130,5 +140,218 @@ li {
     border: 2px solid red;
 }*/
 
+/* MOBILE PHONE SHIT 
+<600px, 601px, 768px, 992px, 1200px */
+@media only screen and (max-width: 600px) {
 
+    .name-title h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 3.5rem; 
+        text-decoration: underline rgb(204, 86, 174);
+        text-decoration-thickness: 0.3rem;
+        Margin: 0;
+    }
+    
+    .name-title h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem; 
+        font-weight: lighter;
+        Margin: 0;
+    }
 
+    .nav .current-page {
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.5rem; 
+        text-decoration: none;
+        line-height: 1.25;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem; 
+        padding-left: 5rem;
+        margin: 0.5rem 0;
+        font-weight: bolder;
+        background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
+        color:white;
+    }
+
+    .section-main .nav a {
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.5rem; 
+        text-decoration: none;
+        line-height: 4rem;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem; 
+        font-weight: bolder;
+    }
+
+    .section-main .nav a:hover {
+        font-size: 2rem;
+        background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
+        transition: all ease-in-out 200ms;
+    }
+
+    .section-main .info p {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<601px, 768px  */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .name-title h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 4.5rem; 
+        text-decoration: underline rgb(204, 86, 174);
+        text-decoration-thickness: 0.5rem;
+        Margin: 0;
+    }
+    
+    .name-title h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem; 
+        font-weight: lighter;
+        Margin: 0;
+    }
+
+    .nav .current-page {
+        font-family: 'Heebo', sans-serif;
+        font-size: 3.5rem;
+        text-decoration: none;
+        line-height: 1.25;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem; 
+        padding-left: 7rem;
+        margin: 0.5rem 0;
+        font-weight: bolder;
+        background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
+        color:white;
+    }
+
+    .section-main .nav a {
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.5rem; 
+        text-decoration: none;
+        line-height: 5rem;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem;
+        font-weight: bolder;
+    }
+
+    .section-main .nav a:hover {
+        font-size: 3rem;
+        background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
+        transition: all ease-in-out 200ms;
+    }
+
+    .section-main .info p {
+        font-size: 1.9rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<769px, 992px  */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .name-title h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 6rem; 
+        text-decoration: underline rgb(204, 86, 174);
+        text-decoration-thickness: 0.7rem;
+        Margin: 0;
+    }
+    
+    .name-title h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem; 
+        font-weight: lighter;
+        Margin: 0;
+    }
+
+    .nav .current-page {
+        font-family: 'Heebo', sans-serif;
+        font-size: 3.5rem;
+        text-decoration: none;
+        line-height: 1.25;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem; 
+        padding-left: 7rem;
+        margin: 0.5rem 0;
+        font-weight: bolder;
+        background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
+        color:white;
+    }
+
+    .section-main .nav a {
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.5rem; 
+        text-decoration: none;
+        line-height: 5rem;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem;
+        font-weight: bolder;
+    }
+
+    .section-main .nav a:hover {
+        font-size: 3rem;
+        background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
+        transition: all ease-in-out 200ms;
+    }
+
+    .section-main .info p {
+        font-size: 1.9rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<993px, 1200px  */
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+
+    .name-title h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 7rem; 
+        text-decoration: underline rgb(204, 86, 174);
+        text-decoration-thickness: 0.9rem;
+        Margin: 0;
+    }
+    
+    .name-title h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 4rem; 
+        font-weight: lighter;
+        Margin: 0;
+    }
+
+    .nav .current-page {
+        font-family: 'Heebo', sans-serif;
+        font-size: 4rem;
+        text-decoration: none;
+        line-height: 1.25;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem; 
+        padding-left: 7rem;
+        margin: 0.5rem 0;
+        font-weight: bolder;
+        background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
+        color:white;
+    }
+
+    .section-main .nav a {
+        font-family: 'Heebo', sans-serif;
+        font-size: 3rem; 
+        text-decoration: none;
+        line-height: 6rem;
+        letter-spacing: 0.7rem;
+        padding: 0.5rem;
+        font-weight: bolder;
+    }
+
+    .section-main .nav a:hover {
+        font-size: 3.5rem;
+        background-color: rgb(163, 76, 141) /*var(--dark-mode-hov)*/;
+        transition: all ease-in-out 200ms;
+    }
+
+    .section-main .info p {
+        font-size: 1.9rem;
+    }
+}

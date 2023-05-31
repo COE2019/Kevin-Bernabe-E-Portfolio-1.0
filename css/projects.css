@@ -1,26 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body::after {
     position: absolute;
     width: 0;
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../Images/arduino-logo.png) url(../Images/mit-ai-logo.png) url(../Images/blender-logo.png) url(../Images/yt-logo.png) url(../Images/ae-logo.png) url(../Images/audition-logo.png) url(../Images/wmm-logo.png);
+    content: url(../Images/arduino-logo.png) url(../Images/mit-ai-logo.png) url(../Images/blender-logo.png) url(../Images/yt-logo.png) url(../Images/davinci-logo.png) url(../Images/premiere-logo.png) url(../Images/ae-logo.png) url(../Images/audition-logo.png) url(../Images/wmm-logo.png);
 }
 
-.nav .current-page  {
-    font-family: 'Heebo', sans-serif;
-    font-size: 5vh; /*40px;*/
-    text-decoration: none;
-    line-height: 8vh;/*70px;*/
-    letter-spacing: 7px;
-    padding: 1vh; /*.2em;*/
+.info {
+    display: flex;
+}
+
+.trailing-bar-container {
+    width: 5px;
+    margin-right: 50px;
+}
+
+@keyframes trail {
+    0% {opacity: 0; 
+        background-image: linear-gradient(transparent, rgb(196, 94, 170)); 
+        top: 0%;}
+    3% {opacity: 1; 
+        background-image: linear-gradient(transparent, rgb(196, 94, 170));
+        top: 3%;}    
+    20% {opacity: 1;
+        background-image: linear-gradient(transparent, rgb(196, 94, 170)); 
+        top:90%;}
+    23% {opacity: 0;
+        background-image: linear-gradient(transparent, rgb(196, 94, 170)); 
+        top:90%;}
+    100% {opacity: 0;
+        background-image: linear-gradient(transparent, rgb(196, 94, 170)); 
+        top:90%;}    
+}
+
+.trailing-bar {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    animation: ease-out infinite;
+    animation-name: trail;
+    animation-duration: 7s;
+    animation-delay: 3s;
 }
 
 /* PROJECTS SECTION */
 .info h4 {
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    font-size: 2.3rem;
     padding-left: 10px;
     border-left: 2px solid rgba(255, 255, 255, 0.39);
     border-width: fit-content;
@@ -29,7 +59,26 @@ body::after {
 .info p {
     margin-top: 2%;
     font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
     width: 75%;
+}
+
+.projects-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.projects-logo:hover{
+    width: 45px;
+    height: 45px;
+}
+
+.projects-site {
+    display: block;
+    left: 40px; 
+    top: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 /* --------------------------------------------
@@ -41,75 +90,39 @@ PROJECT 1 LOGO SECTION */
 }
 
 .arduino-logo {
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/arduino-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.arduino-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .mit-logo {
     margin-left: 0.3vw;
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/mit-ai-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.mit-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .blender-logo {
     margin-left: 0.3vw;
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/blender-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.blender-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .arduino-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/arduino-logo.png);
     transition: all ease-in-out 200ms;
 }
 
 .mit-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/mit-ai-logo.png);
     transition: all ease-in-out 200ms;
 }
 
 .blender-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/blender-logo.png);
     transition: all ease-in-out 200ms;
 }
@@ -117,100 +130,52 @@ PROJECT 1 LOGO SECTION */
 /* --------------------------------------------
 PROJECT 2 LOGO SECTION */
 .ae-logo {
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/ae-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.ae-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .audition-logo {
     margin-left: 0.3vw;
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/audition-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.audition-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .davinci-logo {
     margin-left: 0.3vw;
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/davinci-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.davinci-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .yt-logo {
     margin-left: 0.3vw;
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/yt-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.yt-dlsau-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .ae-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/ae-logo.png);
     transition: all ease-in-out 200ms;
 }
 
 .audition-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/audition-logo.png);
     transition: all ease-in-out 200ms;
 }
 
 .davinci-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/davinci-logo.png);
     transition: all ease-in-out 200ms;
 }
 
 .yt-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/yt-logo.png);
     transition: all ease-in-out 200ms;
 }
@@ -218,33 +183,13 @@ PROJECT 2 LOGO SECTION */
 /* --------------------------------------------
 PROJECT 3 LOGO SECTION */
 .premiere-logo {
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/premiere-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.premiere-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
-.yt-red-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .premiere-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/premiere-logo.png);
     transition: all ease-in-out 200ms;
 }
@@ -252,33 +197,16 @@ PROJECT 3 LOGO SECTION */
 /* --------------------------------------------
 PROJECT 4 LOGO SECTION */
 .wmm-logo {
-    width: 2vmax;
-    height: 2vmax;
     background-image: url(../Images/wmm-logo-bw.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wmm-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
-.yt-fal-site {
-    display: block;
-    left: 2.5vmax; 
-    top: 2.5vmax;
-    height: 2.5vmax;
-    width: 2.5vmax;
-}
-
 .wmm-logo:hover {
-    width: 2.5vmax;
-    height: 2.5vmax;
     background-image: url(../Images/wmm-logo.png);
     transition: all ease-in-out 200ms;
 }
+
+/* MOBILE PHONE SHIT 
+<600px, 601px, 768px, 992px, 1200px */
