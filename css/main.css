@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url(../fonts/Heebo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 
 * { 
     font-family: Yu Gothic;
@@ -51,7 +67,7 @@ li {
 }*/
 
 .name-title h1 {
-    font-family: 'Merriweather', serif;
+    font-family: Merriweather, serif;
     font-size: 10rem; /*~100px;*/
     text-decoration: underline rgb(204, 86, 174);
     text-decoration-thickness: 1.1rem;
@@ -61,7 +77,7 @@ li {
 }
 
 .name-title h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 5rem; /*~50px;*/
     font-weight: lighter;
     Margin: 0;
@@ -80,15 +96,15 @@ li {
 
 /* NAVIGATION SECTION*/
 .nav .current-page {
-    font-family: 'Heebo', sans-serif;
+    font-family: Heebo, sans-serif;
     font-size: 5.5rem; /*40px;*/
     text-decoration: none;
     line-height: 1.25;/*70px;*/
-    letter-spacing: 7px;
+    letter-spacing: 0.2rem;
     padding: 0.5rem; /*.2em;*/
     padding-left: 8rem;
     margin: 0.5rem 0;
-    font-weight: bolder;
+    font-weight: lighter;
     background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
     color:white;
 }
@@ -112,13 +128,13 @@ li {
 }
 
 .section-main .nav a {
-    font-family: 'Heebo', sans-serif;
+    font-family: Heebo, sans-serif;
     font-size: 4rem; /*40px;*/
     text-decoration: none;
     line-height: 8rem;/*70px;*/
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
     padding: 1rem; /*.2em;*/
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 .nav a:hover {
@@ -145,7 +161,7 @@ li {
 @media only screen and (max-width: 600px) {
 
     .name-title h1 {
-        font-family: 'Merriweather', serif;
+        font-family: Merriweather, serif;
         font-size: 3.5rem; 
         text-decoration: underline rgb(204, 86, 174);
         text-decoration-thickness: 0.3rem;
@@ -153,22 +169,22 @@ li {
     }
     
     .name-title h3 {
-        font-family: 'Raleway', sans-serif;
+        font-family: Raleway, sans-serif;
         font-size: 2rem; 
         font-weight: lighter;
         Margin: 0;
     }
 
     .nav .current-page {
-        font-family: 'Heebo', sans-serif;
+        font-family: Heebo, sans-serif;
         font-size: 2.5rem; 
         text-decoration: none;
         line-height: 1.25;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.2rem;
         padding: 0.5rem; 
         padding-left: 5rem;
         margin: 0.5rem 0;
-        font-weight: bolder;
+        font-weight: lighter;
         background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
         color:white;
     }
@@ -178,9 +194,9 @@ li {
         font-size: 1.5rem; 
         text-decoration: none;
         line-height: 4rem;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.2rem;
         padding: 0.5rem; 
-        font-weight: bolder;
+        font-weight: lighter;
     }
 
     .section-main .nav a:hover {
@@ -199,7 +215,7 @@ li {
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     .name-title h1 {
-        font-family: 'Merriweather', serif;
+        font-family: Merriweather, serif;
         font-size: 4.5rem; 
         text-decoration: underline rgb(204, 86, 174);
         text-decoration-thickness: 0.5rem;
@@ -207,34 +223,34 @@ li {
     }
     
     .name-title h3 {
-        font-family: 'Raleway', sans-serif;
+        font-family: Raleway, sans-serif;
         font-size: 2.5rem; 
         font-weight: lighter;
         Margin: 0;
     }
 
     .nav .current-page {
-        font-family: 'Heebo', sans-serif;
+        font-family: Heebo, sans-serif;
         font-size: 3.5rem;
         text-decoration: none;
         line-height: 1.25;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.5rem;
         padding: 0.5rem; 
-        padding-left: 7rem;
+        padding-left: 4rem;
         margin: 0.5rem 0;
-        font-weight: bolder;
+        font-weight: lighter;
         background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
         color:white;
     }
 
     .section-main .nav a {
-        font-family: 'Heebo', sans-serif;
+        font-family: Heebo, sans-serif;
         font-size: 2.5rem; 
         text-decoration: none;
         line-height: 5rem;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.2rem;
         padding: 0.5rem;
-        font-weight: bolder;
+        font-weight: lighter;
     }
 
     .section-main .nav a:hover {
@@ -253,7 +269,7 @@ li {
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 
     .name-title h1 {
-        font-family: 'Merriweather', serif;
+        font-family: Merriweather, serif;
         font-size: 6rem; 
         text-decoration: underline rgb(204, 86, 174);
         text-decoration-thickness: 0.7rem;
@@ -261,22 +277,22 @@ li {
     }
     
     .name-title h3 {
-        font-family: 'Raleway', sans-serif;
+        font-family: Raleway, sans-serif;
         font-size: 2.5rem; 
         font-weight: lighter;
         Margin: 0;
     }
 
     .nav .current-page {
-        font-family: 'Heebo', sans-serif;
+        font-family: Heebo, sans-serif;
         font-size: 3.5rem;
         text-decoration: none;
         line-height: 1.25;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.5rem;
         padding: 0.5rem; 
-        padding-left: 7rem;
+        padding-left: 5rem;
         margin: 0.5rem 0;
-        font-weight: bolder;
+        font-weight: lighter;
         background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
         color:white;
     }
@@ -286,9 +302,9 @@ li {
         font-size: 2.5rem; 
         text-decoration: none;
         line-height: 5rem;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.2rem;
         padding: 0.5rem;
-        font-weight: bolder;
+        font-weight: lighter;
     }
 
     .section-main .nav a:hover {
@@ -307,7 +323,7 @@ li {
 @media only screen and (min-width: 993px) and (max-width: 1400px) {
 
     .name-title h1 {
-        font-family: 'Merriweather', serif;
+        font-family: Merriweather, serif;
         font-size: 7rem; 
         text-decoration: underline rgb(204, 86, 174);
         text-decoration-thickness: 0.9rem;
@@ -315,14 +331,14 @@ li {
     }
     
     .name-title h3 {
-        font-family: 'Raleway', sans-serif;
+        font-family: Raleway, sans-serif;
         font-size: 4rem; 
         font-weight: lighter;
         Margin: 0;
     }
 
     .nav .current-page {
-        font-family: 'Heebo', sans-serif;
+        font-family: Heebo, sans-serif;
         font-size: 4rem;
         text-decoration: none;
         line-height: 1.25;
@@ -330,7 +346,7 @@ li {
         padding: 0.5rem; 
         padding-left: 7rem;
         margin: 0.5rem 0;
-        font-weight: bolder;
+        font-weight: lighter;
         background-image: linear-gradient(to right, transparent, rgb(163, 76, 141));
         color:white;
     }
@@ -340,9 +356,9 @@ li {
         font-size: 3rem; 
         text-decoration: none;
         line-height: 6rem;
-        letter-spacing: 0.7rem;
+        letter-spacing: 0.5rem;
         padding: 0.5rem;
-        font-weight: bolder;
+        font-weight: lighter;
     }
 
     .section-main .nav a:hover {

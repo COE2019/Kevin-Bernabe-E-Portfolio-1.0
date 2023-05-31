@@ -1,0 +1,22 @@
+.about-info {
+    display: flex;
+}
+
+.profile-picture {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 35rem;
+    border: 3px solid rgb(196, 94, 170);
+    background-image: url(../Images/profile-picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-text {
+    margin: 5rem 0 0 5rem;
+}
+
+.about-text .about-hi p {
+    font-size: 4rem;
+}
