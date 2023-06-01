@@ -18,5 +18,184 @@
 }
 
 .about-text .about-hi p {
-    font-size: 4rem;
+    font-family: Merriweather, sans-serif;
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+
+.about-text .about-name p {
+    margin: 1rem 0 0 1rem;
+    font-family: Heebo, sans-serif;
+    font-size: 2.5rem;
+}
+
+.about-text .about-yea p {
+    margin: 3rem 0 0 20rem;
+    font-family: heebo, sans-serif;
+    font-size: 1.5rem;
+}
+
+.about-intro {
+    margin: 3rem 0 0 0;
+}
+
+/* MOBILE PHONE SHIT 
+<600px*/
+@media only screen and (max-width: 600px) {
+
+    .about-text {
+        margin: 0 0 0 11rem;
+    }
+
+    .profile-picture {
+        position: absolute;
+        top: 22rem;
+        width: 11rem;
+        height: 11rem;
+        border-radius: 15rem;
+        border: 3px solid rgb(196, 94, 170);
+        background-image: url(../Images/profile-picture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .about-text .about-hi p {
+        font-family: Merriweather, sans-serif;
+        text-transform: uppercase;
+        font-size: 2.7rem;
+    }
+    
+    .about-text .about-name p {
+        margin: 0.1rem 0 0 1rem;
+        font-family: Heebo, sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    .about-text .about-yea p {
+        margin: 1rem 0 0 5rem;
+        font-family: heebo, sans-serif;
+        font-size: 1rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<601px, 768px  */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .about-text {
+        margin: 0 0 0 16rem;
+    }
+
+    .profile-picture {
+        position: absolute;
+        top: 25rem;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 15rem;
+        border: 3px solid rgb(196, 94, 170);
+        background-image: url(../Images/profile-picture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .about-text .about-hi p {
+        font-family: Merriweather, sans-serif;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+    }
+    
+    .about-text .about-name p {
+        margin: 0.1rem 0 0 1rem;
+        font-family: Heebo, sans-serif;
+        font-size: 2rem;
+    }
+    
+    .about-text .about-yea p {
+        margin: 1rem 0 0 5rem;
+        font-family: heebo, sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* MOBILE PHONE SHIT 
+<769px, 992px  */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    
+    .about-text {
+        margin: 0 0 0 22rem;
+    }
+
+    .profile-picture {
+        position: absolute;
+        top: 27rem;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 15rem;
+        border: 3px solid rgb(196, 94, 170);
+        background-image: url(../Images/profile-picture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .about-text .about-hi p {
+        font-family: Merriweather, sans-serif;
+        text-transform: uppercase;
+        font-size: 4.5rem;
+    }
+    
+    .about-text .about-name p {
+        margin: 0.1rem 0 0 1rem;
+        font-family: Heebo, sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    .about-text .about-yea p {
+        margin: 1rem 0 0 5rem;
+        font-family: heebo, sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<993px, 1200px  */
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+
+    .about-text {
+        margin: 0 0 0 32rem;
+    }
+        
+    .profile-picture {
+        position: absolute;
+        top: 28rem;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 35rem;
+        border: 3px solid rgb(196, 94, 170);
+        background-image: url(../Images/profile-picture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .about-text .about-hi p {
+        font-family: Merriweather, sans-serif;
+        text-transform: uppercase;
+        font-size: 5rem;
+    }
+    
+    .about-text .about-name p {
+        margin: 1rem 0 0 1rem;
+        font-family: Heebo, sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    .about-text .about-yea p {
+        margin: 3rem 0 0 20rem;
+        font-family: heebo, sans-serif;
+        font-size: 1.5rem;
+    }
 }

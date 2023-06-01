@@ -1,0 +1,168 @@
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../Images/fb-logo.png) url(../Images/ig-logo.png) url(../Images/twitter-logo.png) url(../Images/linkedin-logo.png);
+}
+
+.contacts-section {
+    display: flex;
+}
+
+.contacts-logo {
+    margin: 0 1.5rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.contacts-logo:hover {
+    width: 8rem;
+    height: 8rem;
+}
+
+.contacts-site {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+}
+
+/* INFO SECTION */
+
+.fb-logo {
+    background-image: url(../Images/fb-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fb-logo:hover {
+    background-image: url(../Images/fb-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.twitter-logo {
+    background-image: url(../Images/twitter-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter-logo:hover {
+    background-image: url(../Images/twitter-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.ig-logo {
+    background-image: url(../Images/ig-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ig-logo:hover {
+    background-image: url(../Images/ig-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.linkedin-logo {
+    background-image: url(../Images/linkedin-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkedin-logo:hover {
+    background-image: url(../Images/linkedin-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+/* MOBILE PHONE SHIT 
+<600px*/
+@media only screen and (max-width: 600px) {
+    
+    .contacts-logo {
+        margin: 0 .5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .contacts-logo:hover {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+    .contacts-site {
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<601px, 768px  */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    .contacts-logo {
+        margin: 0 .8rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .contacts-logo:hover {
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .contacts-site {
+        display: block;
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+
+/* MOBILE PHONE SHIT 
+<769px, 992px  */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    
+    .contacts-logo {
+        margin: 0 1.5rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .contacts-logo:hover {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .contacts-site {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<993px, 1200px  */
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+        
+    .contacts-logo {
+        margin: 0 1.5rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .contacts-logo:hover {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .contacts-site {
+        display: block;
+        width: 8rem;
+        height: 8rem;
+    }
+}
