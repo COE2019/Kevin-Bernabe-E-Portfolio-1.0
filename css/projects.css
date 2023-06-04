@@ -4,7 +4,7 @@ body::after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../Images/arduino-logo.png) url(../Images/mit-ai-logo.png) url(../Images/blender-logo.png) url(../Images/yt-logo.png) url(../Images/davinci-logo.png) url(../Images/premiere-logo.png) url(../Images/ae-logo.png) url(../Images/audition-logo.png) url(../Images/wmm-logo.png);
+    content: url(../Images/arduino-logo.png) url(../Images/mit-ai-logo.png) url(../Images/blender-logo.png) url(../Images/yt-logo.png) url(../Images/davinci-logo.png) url(../Images/premiere-logo.png) url(../Images/ae-logo.png) url(../Images/audition-logo.png) url(../Images/wmm-logo.png) url(../Images/vscode-logo.png) url(../Images/chatgpt-logo.png) url(../Images/git-logo.png);
 }
 
 .info {
@@ -133,6 +133,46 @@ PROJECT 1 LOGO SECTION */
 
 /* --------------------------------------------
 PROJECT 2 LOGO SECTION */
+.vscode-logo {
+    background-image: url(../Images/vscode-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chatgpt-logo {
+    margin-left: 0.3vw;
+    background-image: url(../Images/chatgpt-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.git-logo {
+    margin-left: 0.3vw;
+    background-image: url(../Images/git-logo-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vscode-logo:hover {
+    background-image: url(../Images/vscode-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.chatgpt-logo:hover {
+    background-image: url(../Images/chatgpt-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+.git-logo:hover {
+    background-image: url(../Images/git-logo.png);
+    transition: all ease-in-out 200ms;
+}
+
+/* --------------------------------------------
+PROJECT 3 LOGO SECTION */
 .ae-logo {
     background-image: url(../Images/ae-logo-bw.png);
     background-size: cover;
@@ -185,7 +225,7 @@ PROJECT 2 LOGO SECTION */
 }
 
 /* --------------------------------------------
-PROJECT 3 LOGO SECTION */
+PROJECT 4 LOGO SECTION */
 .premiere-logo {
     background-image: url(../Images/premiere-logo-bw.png);
     background-size: cover;
@@ -199,7 +239,7 @@ PROJECT 3 LOGO SECTION */
 }
 
 /* --------------------------------------------
-PROJECT 4 LOGO SECTION */
+PROJECT 5 LOGO SECTION */
 .wmm-logo {
     background-image: url(../Images/wmm-logo-bw.png);
     background-size: cover;
