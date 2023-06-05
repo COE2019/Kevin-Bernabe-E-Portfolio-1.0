@@ -9,18 +9,9 @@
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="stylesheet" href="css/about.css"/>
     </head>
-    <body>
-        <header class="name-title">
-            <div>
-                <h1>Kevin James N. Bernabe</h1>
-                <h3>Developer & Designer</h3>
-            </div>
-                <!-- <button class="mode-switch">☀</button> -->
-        </header>
-        <!-- <div class="screen-border"></div> -->
-
-        <div class="section-main">
-            <nav class="nav">
+    <body class="fade-in">
+        <header class="name-title-about">
+            <nav class="nav-about">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -28,13 +19,32 @@
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
             </nav>
+                <!-- <button class="mode-switch">☀</button> -->
+        </header>
+        <!-- <div class="screen-border"></div> -->
+        <div class="section-main-about">
             <!--TODO: Curves BG -->
-
+            <div class="hero-about">
+                <h1 id="name">Kevin James N. Bernabe</h1>
+                <div class="title-about">
+                    <div>
+                    <h3 id="title1">Developer</h3>
+                    </div>
+                    <div>
+                    <h3 id="title2">Designer</h3>
+                    </div>
+                </div>
+                <div id="profile-picture-border"></div>
+                <div id="profile-picture-container">
+                    <div id="profile-picture"></div> 
+                </div>
+            </div>
+            
             <!-- INFORMATION CONTENT SECTION -->
             <div class="info"> 
                 <div class="about-info">
                 <!-- Profile Pic -->
-                    <div class="profile-picture"></div> 
+                    
                 <!-- Short About Story -->
                     <div class="about-text">
                         <div class="about-hi">
@@ -100,9 +110,9 @@
                     
                     <!-- Maybe add picture collage with hover effect
                     refer to this video: https://www.youtube.com/watch?v=6TYkDy54q4E -->
-                    
-                
             </div>
         </div>
+        <script src="js/animation.js"></script>
+        <script src="js/parallax.js"></script>
     </body>
 </html>

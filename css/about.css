@@ -1,17 +1,136 @@
+/* ---------------------------------------------
+HEADER NAVIGATION SECTIONN */
+
+.name-title-about {
+    position: sticky;
+    top: 0;
+    height: 9rem;
+    background-color: transparent;
+}
+
+.nav-about {
+    padding: 2rem 5rem 0 0;
+}
+
+.nav-about ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style-position: inside;
+}
+
+.nav-about a,
+.current-page {
+    font-family: Heebo, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+}  
+
+.nav-about li {
+    transition: all 300ms ease;
+}
+
+.nav-about li:hover {
+    transform: translateY(-0.5rem);
+    border-bottom: 1px solid rgb(204, 86, 174);
+}
+
+.nav-about .current-page {
+transform: translateY(-0.5rem);
+border-bottom: 1px solid rgb(204, 86, 174);
+}
+
+/* ---------------------------------------------
+MAGAZINE COVER AREA */
+
 .about-info {
     display: flex;
 }
 
-.profile-picture {
-    width: 35rem;
-    height: 35rem;
-    border-radius: 35rem;
-    border: 3px solid rgb(196, 94, 170);
-    background-image: url(../Images/profile-picture.jpg);
-    background-size: cover;
+.hero-about {
+    width: 100%;
+    height: calc(100vh - 9rem);
+    position: relative;
+    text-align: center;
+}
+
+.hero-about h1 {
+    position: relative;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    font-family: Merriweather, serif;
+    font-size: 15rem;
+    text-decoration: underline rgb(204, 86, 174);
+    text-decoration-thickness: 1.1rem;
+    text-align: center;
+    z-index: -1;
+}
+
+.title-about{
+    width: 110rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.title-about h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 6.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#profile-picture-container {
+    width: 70rem;
+    height: 76rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -5rem;
+    justify-content: center;
+    align-items: top, center;
+    overflow: hidden;
+    transform: rotate(5deg);
+    /*border: 10px dashed rgb(255, 0, 0);*/
+}
+
+#profile-picture-border {
+    width: 60rem;
+    height: 75rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 3rem;
+    bottom: -8.3rem;
+    justify-content: center;
+    align-items: top, center;
+    transform: rotate(5deg);
+    border: 1rem dashed rgb(121, 46, 117);
+    z-index: -2;
+}
+
+#profile-picture {
+    height: 80rem;
+    position: relative;
+    background-image: url(../Images/profile-picture.png);
+    background-size: 80rem, cover;
     background-repeat: no-repeat;
     background-position: center;
+    transform: rotate(-5deg);
 }
+
+/* ---------------------------------------------
+ABOUT CONTENT AREA */
 
 .about-text {
     margin: 5rem 0 0 5rem;
@@ -39,8 +158,12 @@
     margin: 3rem 0 0 0;
 }
 
+
+
+
+/*
 /* MOBILE PHONE SHIT 
-<600px*/
+<600px
 @media only screen and (max-width: 600px) {
 
     .about-text {
@@ -80,7 +203,7 @@
 }
 
 /* MOBILE PHONE SHIT 
-<601px, 768px  */
+<601px, 768px  
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     .about-text {
@@ -121,7 +244,7 @@
 
 
 /* MOBILE PHONE SHIT 
-<769px, 992px  */
+<769px, 992px  
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     
     .about-text {
@@ -161,7 +284,7 @@
 }
 
 /* MOBILE PHONE SHIT 
-<993px, 1200px  */
+<993px, 1200px  
 @media only screen and (min-width: 993px) and (max-width: 1400px) {
 
     .about-text {
@@ -199,3 +322,4 @@
         font-size: 1.5rem;
     }
 }
+*/
