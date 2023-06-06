@@ -43,9 +43,16 @@ border-bottom: 1px solid rgb(204, 86, 174);
 
 /* ---------------------------------------------
 MAGAZINE COVER AREA */
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 
-.about-info {
-    display: flex;
+.parallax {
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
 }
 
 .hero-about {
@@ -56,7 +63,19 @@ MAGAZINE COVER AREA */
 }
 
 .hero-about h1 {
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 14rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Merriweather, serif;
+    font-size: 15rem;
+    text-decoration: underline rgb(204, 86, 174);
+    text-decoration-thickness: 1.1rem;
+    text-align: center;
+    z-index: -1;
+
+    /*position: relative;
     top: 20rem;
     left: 0;
     right: 0;
@@ -65,11 +84,20 @@ MAGAZINE COVER AREA */
     text-decoration: underline rgb(204, 86, 174);
     text-decoration-thickness: 1.1rem;
     text-align: center;
-    z-index: -1;
+    z-index: -1;*/
 }
 
 .title-about{
     width: 110rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    /*width: 110rem;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -77,7 +105,7 @@ MAGAZINE COVER AREA */
     left: 0;
     right: 0;
     margin: auto;
-    z-index: -1;
+    z-index: -1;*/
 }
 
 .title-about h3 {
@@ -87,8 +115,16 @@ MAGAZINE COVER AREA */
     text-align: center;
 }
 
-#profile-picture-container {
+.profile-picture-container {
     width: 70rem;
+    height: 76rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%) rotate(5deg);
+
+    /*width: 70rem;
     height: 76rem;
     position: absolute;
     margin: auto;
@@ -99,12 +135,21 @@ MAGAZINE COVER AREA */
     justify-content: center;
     align-items: top, center;
     overflow: hidden;
-    transform: rotate(5deg);
+    transform: rotate(5deg);*/
     /*border: 10px dashed rgb(255, 0, 0);*/
 }
 
-#profile-picture-border {
+.profile-picture-border {
     width: 60rem;
+    height: 75rem;
+    position: absolute;
+    top: calc(50% + 1rem);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(5deg);
+    z-index: -2;
+    border: 1rem dashed rgb(121, 46, 117);
+    
+    /*width: 60rem;
     height: 75rem;
     position: absolute;
     margin: auto;
@@ -116,10 +161,10 @@ MAGAZINE COVER AREA */
     align-items: top, center;
     transform: rotate(5deg);
     border: 1rem dashed rgb(121, 46, 117);
-    z-index: -2;
+    z-index: -2;*/
 }
 
-#profile-picture {
+.profile-picture {
     height: 80rem;
     position: relative;
     background-image: url(../Images/profile-picture.png);
@@ -131,35 +176,82 @@ MAGAZINE COVER AREA */
 
 /* ---------------------------------------------
 ABOUT CONTENT AREA */
-
-.about-text {
-    margin: 5rem 0 0 5rem;
+.info {
+    width: 150rem;
+    margin: 15rem auto;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 5rem;
 }
 
-.about-text .about-hi p {
+.about-hi {
+    padding-top: 10rem;
+    margin: 2rem 12rem;
+    /*border: 1px solid red;*/
+}
+.about-hi p {
     font-family: Merriweather, sans-serif;
     text-transform: uppercase;
-    font-size: 6rem;
-}
-
-.about-text .about-name p {
-    margin: 1rem 0 0 1rem;
-    font-family: Heebo, sans-serif;
-    font-size: 2.5rem;
-}
-
-.about-text .about-yea p {
-    margin: 3rem 0 0 20rem;
-    font-family: heebo, sans-serif;
-    font-size: 1.5rem;
+    font-size: 5rem;
 }
 
 .about-intro {
-    margin: 3rem 0 0 0;
+    font-size: 3rem;
+    margin: 0 12rem;
+    line-height: 4rem;
+}
+.about-intro p:nth-child(3) {
+    margin-top: 2rem;
+}
+.about-intro p:nth-child(6) {
+    font-family: Merriweather, sans-serif;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.about-intro p:nth-child(7) {
+    margin-top: 2rem;
 }
 
+.skill-bar {
+    height: 2rem;
+    width: 40rem;
+    border-radius: 1rem;
+    border: 3px solid var(--dark-mode-bg);
+}
+.skill-level {
+    height: 100%;
+    background-color: rgb(204, 86, 174);
+    border-radius: 1rem;
+}
 
+.arduino {
+    width: 10rem;
+}
+.assembly {
+    width: 7rem;
+}
+.c {
+    width: 12rem;
+}
+.c-plus {
+    width: 11rem;
+}
+.htmlcss {
+    width: 24rem;
+}
+.js {
+    width: 15rem;
+}
+.py {
+    width: 17rem;
+}
 
+.end-title {
+    font-family: Merriweather, sans-serif;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
 
 /*
 /* MOBILE PHONE SHIT 
@@ -284,42 +376,78 @@ ABOUT CONTENT AREA */
 }
 
 /* MOBILE PHONE SHIT 
-<993px, 1200px  
+<993px, 1200px  */
 @media only screen and (min-width: 993px) and (max-width: 1400px) {
 
-    .about-text {
-        margin: 0 0 0 32rem;
-    }
-        
-    .profile-picture {
+    .hero-about h1 {
+        width: 100%;
         position: absolute;
-        top: 28rem;
-        width: 30rem;
-        height: 30rem;
-        border-radius: 35rem;
-        border: 3px solid rgb(196, 94, 170);
-        background-image: url(../Images/profile-picture.jpg);
-        background-size: cover;
+        top: calc(50% - 14rem);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Merriweather, serif;
+        font-size: 12rem;
+        text-decoration: underline rgb(204, 86, 174);
+        text-decoration-thickness: 0.9rem;
+        text-align: center;
+        z-index: -1;
+    }
+
+    .title-about{
+        width: 90rem;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: calc(50% + 3rem);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .title-about h3 {
+        font-family: Raleway, sans-serif;
+        font-size: 5.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }    
+
+    .profile-picture-border {
+        width: 40rem;
+        height: 55rem;
+        position: absolute;
+        top: calc(50% + 1rem);
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(5deg);
+        z-index: -2;
+        border: 1rem dashed rgb(121, 46, 117);
+
+
+    }
+
+    .profile-picture-container {
+        width: 50rem;
+        height: 56rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
+        transform: translate(-50%, -50%) rotate(5deg);
+    }
+
+    .profile-picture {
+        height: 60rem;
+        position: relative;
+        background-image: url(../Images/profile-picture.png);
+        background-size: 60rem, cover;
         background-repeat: no-repeat;
         background-position: center;
+        transform: rotate(-5deg);
     }
-    
-    .about-text .about-hi p {
-        font-family: Merriweather, sans-serif;
-        text-transform: uppercase;
-        font-size: 5rem;
-    }
-    
-    .about-text .about-name p {
-        margin: 1rem 0 0 1rem;
-        font-family: Heebo, sans-serif;
-        font-size: 2.5rem;
-    }
-    
-    .about-text .about-yea p {
-        margin: 3rem 0 0 20rem;
-        font-family: heebo, sans-serif;
-        font-size: 1.5rem;
+
+    .info {
+        width: 120rem;
+        margin: 15rem auto;
+        background-color: rgba(0, 0, 0, 0.575);
+        border-radius: 5rem;
     }
 }
-*/

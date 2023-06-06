@@ -22,11 +22,11 @@
                 <!-- <button class="mode-switch">☀</button> -->
         </header>
         <!-- <div class="screen-border"></div> -->
-        <div class="section-main-about">
+        <main>
             <!--TODO: Curves BG -->
             <div class="hero-about">
-                <h1 id="name">Kevin James N. Bernabe</h1>
-                <div class="title-about">
+                <h1 class="name parallax" data-speedx="0.2" data-speedy="0.22">Kevin James N. Bernabe</h1>
+                <div class="title-about parallax" data-speedx="0.2" data-speedy="0.22">
                     <div>
                     <h3 id="title1">Developer</h3>
                     </div>
@@ -34,84 +34,74 @@
                     <h3 id="title2">Designer</h3>
                     </div>
                 </div>
-                <div id="profile-picture-border"></div>
-                <div id="profile-picture-container">
-                    <div id="profile-picture"></div> 
+                <!-- Profile Pic -->
+                <div class="profile-picture-border rotate"  data-speedx="0.15" data-speedy="0.15"></div>
+                <div class="profile-picture-container rotate"  data-speedx="0.1" data-speedy="0.15">
+                    <div class="profile-picture"></div> 
                 </div>
             </div>
-            
+        </main>
             <!-- INFORMATION CONTENT SECTION -->
             <div class="info"> 
-                <div class="about-info">
-                <!-- Profile Pic -->
-                    
-                <!-- Short About Story -->
-                    <div class="about-text">
-                        <div class="about-hi">
-                            <p>Greetings,</p><br>
-                        </div>
-                        <div class="about-name">
-                            <p>My name is Kevin-...</p><br>
-                        </div>
-                        <div class="about-yea">
-                            <p>...Yea its written up there^</p><br>
-                        </div>
-                    </div>
+                <div class="about-hi">
+                    <p>Greetings,</p>
                 </div>
-                    <div class="about-intro">
-                        <p>I'm a developer and a designer! I program stuff and make things pretty.</p><br>
-                        <p>In today's standards, just being pretty is not enough. Which is why its my job to make sure that things are beauty and brains!</p><br>
-                        <p>I graduated from De La Salle Araneta University in 2023 <!--as a cum laude--> with a bachelor degree in BS Computer Engineering.</p><br>
-                        <p>I love science and technology as well as history!</p><br>
-                        <p>Due to my experiences in different fields, I've developed basic skills in other areas of expertise such as journalism, debate, automation, video and photo editing, 3D modelling and animation, just to name a few.</p><br>
-                        <p>My relevant skills are:</p><br>
-                        <p>Arduino</p>
-                            <div class="skill-bar-c">
-                                <div class="skill-level-c"></div>
-                            </div>
-                        <p>Assembly</p>
-                            <div class="skill-bar-c">
-                                <div class="skill-level-c"></div>
-                            </div>
-                        <p>C</p>
-                            <div class="skill-bar-c">
-                                <div class="skill-level-c"></div>
-                            </div>
-                        <p>C++</p>
-                            <div class="skill-bar-c">
-                                <div class="skill-level-c"></div>
-                            </div>
-                        <p>HTML & CSS</p>
-                            <div class="skill-bar-htmlcss">
-                                <div class="skill-level-htmlcss"></div>
-                            </div>
-                        <p>Javascript</p>
-                            <div class="skill-bar-js">
-                                <div class="skill-level-js"></div>
-                            </div>
-                        <p>Python</p>
-                            <div class="skill-bar-py">
-                                <div class="skill-level-py"></div>
-                            </div>
-                        <br><br><br><br><br><br><br><br><br><br>  
-                        <p>Special Thanks to</p> 
-                        <p>Dani Krossing</p> 
-                        <p>Dr. Yazılım</p>
-                        <p>Hyperplexed</p>
-                        <p>Web Dev Simplified</p>
-                        <br>  
-                        <p>Inspirations:</p>
-                        <p>Eric Van Holz</p>
-                        <p>Keita Yamada</p>
-                    </div>
-                    
-                    <br><br><br><br><br><br><br><br><br><br>
+                <!-- Short About Story -->
+                <div class="about-intro">
+                    <p>I'm a developer and a designer! I program stuff and make things pretty.</p>
+                    <p>In today's standards, just being pretty is not enough. Which is why its my job to make sure that things are beauty and brains!</p>
+                    <p>I graduated from De La Salle Araneta University in 2023 <!--as a cum laude--> with a bachelor degree in BS Computer Engineering.</p>
+                    <p>I love science and technology as well as history!</p>
+                    <p>Due to my experiences in different fields, I've developed basic skills in other areas of expertise such as journalism, debate, automation, video and photo editing, 3D modelling and animation, just to name a few.</p>
+                    <p>My relevant skills are:</p>
+                    <p>Arduino</p>
+                        <div class="skill-bar">
+                            <div class="skill-level arduino"></div>
+                        </div>
+                    <p>Assembly</p>
+                        <div class="skill-bar">
+                            <div class="skill-level assembly"></div>
+                        </div>
+                    <p>C</p>
+                        <div class="skill-bar">
+                            <div class="skill-level c"></div>
+                        </div>
+                    <p>C++</p>
+                        <div class="skill-bar">
+                            <div class="skill-level c-plus"></div>
+                        </div>
+                    <p>HTML & CSS</p>
+                        <div class="skill-bar">
+                            <div class="skill-level htmlcss"></div>
+                        </div>
+                    <p>Javascript</p>
+                        <div class="skill-bar">
+                            <div class="skill-level js"></div>
+                        </div>
+                    <p>Python</p>
+                        <div class="skill-bar">
+                            <div class="skill-level py"></div>
+                        </div>
+                    <br><br><br><br><br><br><br><br><br><br>  
+                    <p class="end-title">Special Thanks to</p> 
+                    <p>Dani Krossing</p> 
+                    <p>Dr. Yazılım</p>
+                    <p>Hyperplexed</p>
+                    <p>Web Dev Simplified</p>
+                    <p>SuperSimpleDev</p>
+                    <p>True Coder</p>
+                    <br>  
+                    <p class="end-title">Inspirations:</p>
+                    <p>Eric Van Holz</p>
+                    <p>Keita Yamada</p>
+                </div>
                 
+                <br><br><br><br><br><br><br><br><br><br>
+            
                     
                     <!-- Maybe add picture collage with hover effect
                     refer to this video: https://www.youtube.com/watch?v=6TYkDy54q4E -->
             </div>
-        </div>
         <script src="js/animation.js"></script>
         <script src="js/parallax.js"></script>
     </body>
