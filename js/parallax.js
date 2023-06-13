@@ -13,7 +13,7 @@ window.addEventListener("mousemove", (e) => {
         let speedy = element.dataset.speedy;
 
         element.style.transform = 
-        `translateX(calc(-50% + ${-xValue * speedx}px)) 
+        `translateX(calc(-50% + ${xValue * speedx}px)) 
         translateY(calc(-50% + ${yValue * speedy}px))`;
     })
     
@@ -22,7 +22,7 @@ window.addEventListener("mousemove", (e) => {
         let speedy = element.dataset.speedy;
 
         element.style.transform = `rotate(5deg)
-        translateX(calc(-50% + ${-xValue * speedx}px)) 
+        translateX(calc(-50% + ${xValue * speedx}px)) 
         translateY(calc(-50% + ${yValue * speedy}px))`;
     })
 })

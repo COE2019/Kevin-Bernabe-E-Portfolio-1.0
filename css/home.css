@@ -1,0 +1,8 @@
+@keyframes pan-up {
+    0%{transform: translate(0%, 20%)}
+    100%{transform: translate(0%, 0%)}
+}
+
+.info {
+    animation: pan-up 2s cubic-bezier(.18,.91,.22,.92);
+}

@@ -9,6 +9,7 @@ body::after {
 
 .contacts-section {
     display: flex;
+    justify-content: center;
 }
 
 .contacts-logo {

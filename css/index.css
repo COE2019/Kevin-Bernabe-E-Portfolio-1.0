@@ -1,0 +1,56 @@
+/* CONTROLLABLE FADE-OUT ANIMATION
+LINKED WITH index.js */
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.7s cubic-bezier(.18,.91,.22,.92) 2s;
+}
+
+/* BLACK BOX THAT FILLS THE LOADING */
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+/* BLACK BOX CONTAINER FOR ELEMENTS i.e. h2 */
+.loading-elem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.loading-elem h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Raleway, sans-serif;  
+}
+
+/* ANIMATION FOR ELEMENTS */
+@keyframes left-pan {
+    0% {transform: translate(110%, 0%);}
+    50%{transform: translate(110%, 0%);}
+    100% {transform: translate(0%, 0%);}
+}
+.loading-name {
+    overflow: hidden;
+}
+.loading-elem h2:nth-child(1) {
+    animation: left-pan 2s ease-out ;
+    z-index: 2;
+}
+.loading-elem h2:nth-child(2) {
+    color: black;
+    background-color: white;
+    padding: 0.2rem 0.8rem;
+    font-weight: bold;
+    z-index: 5;
+}

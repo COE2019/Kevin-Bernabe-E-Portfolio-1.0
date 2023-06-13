@@ -52,9 +52,10 @@ li {
     cursor: default;
 }
 
+/* FADE IN ANIMATION WHEN PAGE LOADED PROPERTY */
 .fade-in {
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.5s cubic-bezier(.18,.91,.22,.92);
 }
 
 /* NAME & JOB TITLE SECTION*/
@@ -66,18 +67,11 @@ li {
     z-index: 1;
 }
 
-/*.name-title .mode-switch {
-    border-bottom: 1px solid var(--dark-mode-bg);
-    align-content: right;
-}*/
-
 .name-title h1 {
     font-family: Merriweather, serif;
     font-size: 10rem; /*~100px;*/
     text-decoration: underline rgb(204, 86, 174);
     text-decoration-thickness: 1.1rem;
-    /*border-bottom: 1px solid white;
-    width: fit-content;*/
     Margin: 0;
 }
 
