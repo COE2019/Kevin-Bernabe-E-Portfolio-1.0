@@ -257,7 +257,8 @@ PROJECT 5 LOGO SECTION */
     transition: all ease-in-out 200ms;
 }
 
-/* MOBILE PHONE SHIT 
+/* --------------------------------------------
+MOBILE PHONE SHIT 
 <600px*/
 @media only screen and (max-width: 600px) {
     

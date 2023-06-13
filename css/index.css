@@ -49,7 +49,7 @@ LINKED WITH index.js */
 }
 .loading-elem h2:nth-child(2) {
     color: black;
-    background-color: white;
+    background-color: rgb(204, 86, 174);
     padding: 0.2rem 0.8rem;
     font-weight: bold;
     z-index: 5;
