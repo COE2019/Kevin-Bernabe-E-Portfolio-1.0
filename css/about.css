@@ -239,130 +239,185 @@ ABOUT CONTENT AREA */
 }
 
 /* MOBILE PHONE SHIT 
-<601px, 768px  
+<601px, 768px  */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-
-    .about-text {
-        margin: 0 0 0 16rem;
-    }
-
-    .profile-picture {
-        position: absolute;
-        top: 25rem;
-        width: 15rem;
-        height: 15rem;
-        border-radius: 15rem;
-        border: 3px solid rgb(196, 94, 170);
-        background-image: url(../Images/profile-picture.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    /* NAV SECTION */
     
-    .about-text .about-hi p {
-        font-family: Merriweather, sans-serif;
-        text-transform: uppercase;
-        font-size: 3.5rem;
-    }
-    
-    .about-text .about-name p {
-        margin: 0.1rem 0 0 1rem;
-        font-family: Heebo, sans-serif;
+    .nav-about a,
+    .current-page {
         font-size: 2rem;
-    }
-    
-    .about-text .about-yea p {
-        margin: 1rem 0 0 5rem;
-        font-family: heebo, sans-serif;
-        font-size: 1.5rem;
-    }
-}
+    }  
 
-
-/* MOBILE PHONE SHIT 
-<769px, 992px  
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    
-    .about-text {
-        margin: 0 0 0 22rem;
-    }
-
-    .profile-picture {
-        position: absolute;
-        top: 27rem;
-        width: 20rem;
-        height: 20rem;
-        border-radius: 15rem;
-        border: 3px solid rgb(196, 94, 170);
-        background-image: url(../Images/profile-picture.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .about-text .about-hi p {
-        font-family: Merriweather, sans-serif;
-        text-transform: uppercase;
-        font-size: 4.5rem;
-    }
-    
-    .about-text .about-name p {
-        margin: 0.1rem 0 0 1rem;
-        font-family: Heebo, sans-serif;
-        font-size: 2.5rem;
-    }
-    
-    .about-text .about-yea p {
-        margin: 1rem 0 0 5rem;
-        font-family: heebo, sans-serif;
-        font-size: 1.5rem;
-    }
-}
-
-/* MOBILE PHONE SHIT 
-<993px, 1200px  */
-@media only screen and (min-width: 993px) and (max-width: 1400px) {
-
+    /* MAGAZINE AREA SECTION */
     .hero-about h1 {
-        width: 100%;
-        position: absolute;
-        top: calc(50% - 14rem);
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Merriweather, serif;
-        font-size: 12rem;
-        text-decoration: underline rgb(204, 86, 174);
+        font-size: 5rem;
         text-decoration-thickness: 0.9rem;
-        text-align: center;
-        z-index: -1;
     }
 
     .title-about{
-        width: 90rem;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        top: calc(50% + 3rem);
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
+        top: calc(50% - 7rem);
+        width: 40rem;
     }
 
     .title-about h3 {
-        font-family: Raleway, sans-serif;
-        font-size: 5.5rem;
-        font-weight: lighter;
-        text-align: center;
+        font-size: 2.5rem;
+    }    
+
+    .profile-picture-border {
+        width: 30rem;
+        height: 45rem;
+        border: 1rem dashed rgb(121, 46, 117);
+    }
+
+    .profile-picture-container {
+        width: 40rem;
+        height: 46rem;
+    }
+
+    .profile-picture {
+        height: 50rem;
+        background-size: 50rem, cover;
+    }
+
+    /* INFORMATION SECTION */
+    .info {
+        width: 50rem;
+        margin: 15rem auto;
+        border-radius: 3rem;
+    }
+
+    .about-hi {
+        padding-top: 5rem;
+        margin: 2rem 4rem;
+    }
+    .about-hi p {
+        font-size: 2.4rem;
+    }
+    
+    .about-intro {
+        font-size: 1.7rem;
+        margin: 0 4rem;
+        line-height: 4rem;
+    }
+    .about-intro p:nth-child(3) {
+        margin-top: 2rem;
+    }
+    .about-intro p:nth-child(6) {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+    .about-intro p:nth-child(7) {
+        margin-top: 0rem;
+    }
+    
+    .skill-bar {
+        height: 1rem;
+        width: 40rem;
+        border-radius: 1rem;
+        border: 3px solid var(--dark-mode-bg);
+    }
+    .skill-level {
+        height: 100%;
+        background-color: rgb(204, 86, 174);
+        border-radius: 1rem;
+    }
+    
+    .arduino {
+        width: 7rem;
+    }
+    .assembly {
+        width: 4rem;
+    }
+    .c {
+        width: 9rem;
+    }
+    .c-plus {
+        width: 8rem;
+    }
+    .htmlcss {
+        width: 21rem;
+    }
+    .js {
+        width: 12rem;
+    }
+    .py {
+        width: 14rem;
+    }
+    
+    .end-title {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* MOBILE PHONE SHIT 
+<769px, 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* NAV SECTION */
+    
+    .nav-about a,
+    .current-page {
+        font-size: 2.5rem;
+    }  
+
+    /* MAGAZINE AREA SECTION */
+    .hero-about h1 {
+        font-size: 10rem;
+        text-decoration-thickness: 0.9rem;
+    }
+
+    .title-about{
+        width: 80rem;
+    }
+
+    .title-about h3 {
+        font-size: 4.5rem;
     }    
 
     .profile-picture-border {
         width: 40rem;
         height: 55rem;
-        position: absolute;
-        top: calc(50% + 1rem);
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(5deg);
-        z-index: -2;
+        border: 1rem dashed rgb(121, 46, 117);
+    }
+
+    .profile-picture-container {
+        width: 50rem;
+        height: 56rem;
+    }
+
+    .profile-picture {
+        height: 60rem;
+        background-size: 60rem, cover;
+    }
+
+    /* INFORMATION SECTION */
+    .info {
+        width: 80rem;
+        margin: 15rem auto;
+        border-radius: 5rem;
+    }
+}
+
+/* MOBILE PHONE SHIT 
+<993px, 1200px  */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .hero-about h1 {
+        font-size: 12rem;
+        text-decoration-thickness: 0.9rem;
+    }
+
+    .title-about{
+        width: 90rem;
+    }
+
+    .title-about h3 {
+        font-size: 5.5rem;
+    }    
+
+    .profile-picture-border {
+        width: 40rem;
+        height: 55rem;
         border: 1rem dashed rgb(121, 46, 117);
 
 
@@ -371,27 +426,61 @@ ABOUT CONTENT AREA */
     .profile-picture-container {
         width: 50rem;
         height: 56rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        overflow: hidden;
-        transform: translate(-50%, -50%) rotate(5deg);
     }
 
     .profile-picture {
         height: 60rem;
-        position: relative;
-        background-image: url(../Images/profile-picture.png);
         background-size: 60rem, cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        transform: rotate(-5deg);
     }
 
     .info {
         width: 120rem;
         margin: 15rem auto;
-        background-color: rgba(0, 0, 0, 0.575);
+        border-radius: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1800px) {
+    /* NAV SECTION */
+    
+    .nav-about a,
+    .current-page {
+        font-size: 2.5rem;
+    }  
+
+    /* MAGAZINE AREA SECTION */
+    .hero-about h1 {
+        font-size:12rem;
+        text-decoration-thickness: 0.9rem;
+    }
+
+    .title-about{
+        width: 90rem;
+    }
+
+    .title-about h3 {
+        font-size: 5rem;
+    }    
+
+    .profile-picture-border {
+        width: 40rem;
+        height: 55rem;
+    }
+
+    .profile-picture-container {
+        width: 50rem;
+        height: 56rem;
+    }
+
+    .profile-picture {
+        height: 60rem;
+        background-size: 60rem, cover;
+    }
+
+    /* INFORMATION SECTION */
+    .info {
+        width: 140rem;
+        margin: 15rem auto;
         border-radius: 5rem;
     }
 }
